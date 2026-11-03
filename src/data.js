@@ -1,0 +1,77 @@
+export const DEMO_USER = {
+  staffId: 'MC1042',
+  pin: '2468',
+  name: 'Maya Chen',
+  role: 'Housekeeper',
+};
+
+// task: 'not_started' | 'in_progress' | 'done'
+export const INITIAL_ROOMS = [
+  {
+    number: 103,
+    service: 'Full service',
+    occupancy: 'Vacant',
+    roomType: 'King',
+    notes: 'Checked out at 10 AM. Strip and remake the bed; restock the minibar.',
+    supervisor: { level: 'Low', reason: null },
+    flag: null,
+    photos: [],
+    task: 'not_started',
+    completedAt: null,
+  },
+  {
+    number: 104,
+    service: 'Refresh',
+    occupancy: 'Occupied',
+    roomType: 'Two Queens',
+    notes: 'Guest asked for extra towels and two bottles of water.',
+    supervisor: { level: 'Medium', reason: 'Service requested before noon' },
+    flag: null,
+    photos: [],
+    task: 'not_started',
+    completedAt: null,
+  },
+  {
+    number: 105,
+    service: 'Refresh',
+    occupancy: 'Occupied',
+    roomType: 'King',
+    notes: 'Guest prefers linens are not changed. Replace coffee pods.',
+    supervisor: { level: 'Low', reason: null },
+    flag: null,
+    photos: [],
+    task: 'not_started',
+    completedAt: null,
+  },
+  {
+    number: 106,
+    service: 'Full service',
+    occupancy: 'Vacant',
+    roomType: 'Suite',
+    notes: 'VIP arrival. Place the welcome amenity and make up the sofa bed.',
+    supervisor: { level: 'High', reason: 'Arrival at 2 PM' },
+    flag: null,
+    photos: [],
+    task: 'not_started',
+    completedAt: null,
+  },
+  {
+    number: 107,
+    service: 'Full service',
+    occupancy: 'Vacant',
+    roomType: 'Accessible King',
+    notes: 'Keep the shower bench and lowered rails clear and fully stocked.',
+    supervisor: { level: 'Low', reason: null },
+    flag: null,
+    photos: [],
+    task: 'not_started',
+    completedAt: null,
+  },
+];
+
+export const FLAG_REASONS = [
+  'Guest waiting',
+  'Front desk request',
+  'Time-sensitive service',
+  'Other',
+];
